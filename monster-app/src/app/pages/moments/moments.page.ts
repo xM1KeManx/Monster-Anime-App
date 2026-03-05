@@ -43,7 +43,7 @@ export class MomentsPage {
 Lo que hace esta escena tan perturbadora es precisamente lo que no se ve. Johan no necesita ensuciarse las manos. No hay pelea, no hay persecución, no hay testigos. Solo un hombre que sabía demasiado y que de repente ya no existe, y una muerte tan limpia que ni siquiera levanta sospechas.
 
 Es el momento que mejor ilustra por qué Johan es prácticamente imposible de atrapar. Mientras detectives, policías y el propio Tenma intentan seguirle el rastro, Johan opera en un nivel diferente — eliminando a quienes se acercan antes de que siquiera sepan que ya los vio. La botella no es solo el arma, es su mensaje: para Johan, matar a alguien puede ser tan simple y tan mundano como un accidente doméstico.`,
-      videoUrl: 'https://filelions.top/embed/p5cydgti4c1l',
+      videoUrl: 'https://vimeo.com/1170656573?fl=tl&fe=ec',
       videoId: '', // Reemplazar con video real del momento
     },
     {
@@ -57,7 +57,7 @@ Es el momento que mejor ilustra por qué Johan es prácticamente imposible de at
 Este momento captura perfectamente por qué Johan es un villano diferente a todos los demás. No necesita violencia física para causar daño. Su arma es la palabra, la mirada, la idea que planta en la mente de otros. Con un niño, eso es devastador: una mente en formación no tiene defensas contra alguien como Johan.
 
 La escena funciona también como recordatorio del origen del propio Johan. Él mismo fue un niño sometido a traumas psicológicos en el Kinderheim 511 y a través de los libros de Bonaparta. Al traumatizar a este niño, Johan no está siendo simplemente cruel — está replicando lo que le hicieron a él, como si fuera lo único que conoce. Es uno de los momentos más oscuros y más honestos sobre la naturaleza del ciclo del trauma en toda la serie.`,
-  videoUrl: 'https://filelions.top/embed/sga7e4nrynhq',
+  videoUrl: 'https://player.vimeo.com/video/1170656573?badge=0&title=0&byline=0&portrait=0&color=c0392b',
   videoId: '', // Reemplaza con el ID real del clip del episodio 49
     },
     {
@@ -73,7 +73,7 @@ Cuando llegan al hospital simultáneamente Johan Liebert (un niño) y el alcalde
 Pero el niño vive. Y ese niño es Johan.
 
 Esta decisión —tomada por los principios más nobles— desencadena uno de los relatos de consecuencias no intencionales más magistralmente contados en la historia del manga. Tenma nunca abandona su principio: todas las vidas valen lo mismo. Incluso la de un monstruo.`,
-      videoUrl: 'https://filelions.top/embed/3d2z30zph8ku',
+      videoUrl: 'https://player.vimeo.com/video/1170656466?badge=0&title=0&byline=0&portrait=0&color=c0392b',
       videoId: '', // Reemplazar con video real del momento
     },
   ];

@@ -31,7 +31,7 @@ const MOMENTS: Moment[] = [
 Lo que hace esta escena tan perturbadora es precisamente lo que no se ve. Johan no necesita ensuciarse las manos. Solo un hombre que sabía demasiado y que de repente ya no existe, y una muerte tan limpia que ni siquiera levanta sospechas.
 
 La botella no es solo el arma, es su mensaje: para Johan, matar a alguien puede ser tan simple y mundano como un accidente doméstico.`,
-    videoUrl: 'https://filelions.top/embed/p5cydgti4c1l',
+    videoUrl: 'https://player.vimeo.com/video/1170656533?badge=0&title=0&byline=0&portrait=0&color=c0392b',
     videoId: '',
   },
   {
@@ -45,7 +45,7 @@ La botella no es solo el arma, es su mensaje: para Johan, matar a alguien puede 
 Este momento captura perfectamente por qué Johan es un villano diferente. No necesita violencia física para causar daño. Su arma es la palabra, la mirada, la idea que planta en la mente de otros.
 
 Al traumatizar a este niño, Johan replica lo que le hicieron a él. Es uno de los momentos más oscuros y honestos sobre la naturaleza del ciclo del trauma en toda la serie.`,
-    videoUrl: 'https://filelions.top/embed/sga7e4nrynhq',
+    videoUrl: 'https://player.vimeo.com/video/1170656573?badge=0&title=0&byline=0&portrait=0&color=c0392b',
     videoId: '',
   },
   {
@@ -59,7 +59,7 @@ Al traumatizar a este niño, Johan replica lo que le hicieron a él. Es uno de l
 Cuando llegan al hospital simultáneamente Johan y el alcalde con heridas graves, el director ordena a Tenma operar al alcalde. Tenma desobedece y opera al niño. El alcalde muere. La carrera de Tenma se destruye.
 
 Esta decisión tomada por los principios más nobles desencadena uno de los relatos de consecuencias no intencionales más magistralmente contados en la historia del manga.`,
-    videoUrl: 'https://filelions.top/embed/3d2z30zph8ku',
+    videoUrl: 'https://player.vimeo.com/video/1170656466?badge=0&title=0&byline=0&portrait=0&color=c0392b',
     videoId: '',
   },
 ];
