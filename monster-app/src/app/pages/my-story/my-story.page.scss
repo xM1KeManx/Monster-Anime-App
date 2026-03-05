@@ -1,0 +1,116 @@
+/* src/app/pages/my-story/my-story.page.scss */
+
+.story-content {
+  --background: var(--monster-black);
+}
+
+/* INTRO */
+.story-intro {
+  padding: 24px 20px 16px;
+}
+
+.story-quote-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.story-quote-line {
+  width: 60px;
+  height: 1px;
+  background: var(--monster-red);
+}
+
+.story-quote {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--monster-cream-dark);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 300px;
+}
+
+/* VIDEO */
+.story-video-section {
+  padding: 0 16px 16px;
+}
+
+.video-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: var(--monster-text-dim);
+  text-transform: uppercase;
+
+  .video-icon {
+    font-size: 0.9rem;
+  }
+}
+
+.video-wrapper {
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--monster-gray);
+  background: var(--monster-darker);
+}
+
+.story-video {
+  width: 100%;
+  display: block;
+  max-height: 400px;
+  background: #000;
+}
+
+.video-instruction {
+  margin: 10px 0 0;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--monster-gold);
+  opacity: 0.8;
+  line-height: 1.5;
+  font-style: italic;
+
+  code {
+    background: rgba(139,26,26,0.2);
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-size: 0.7rem;
+    color: var(--monster-cream);
+  }
+}
+
+/* BODY */
+.story-body {
+  padding: 16px 20px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: var(--monster-text-dim);
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+.story-paragraph {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--monster-text);
+  margin: 0 0 16px;
+  text-align: justify;
+
+  em {
+    font-style: italic;
+    color: var(--monster-cream-dark);
+  }
+}

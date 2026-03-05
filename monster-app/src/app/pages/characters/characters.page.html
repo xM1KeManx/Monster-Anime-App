@@ -1,0 +1,41 @@
+<!-- src/app/pages/characters/characters.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">‹</ion-button>
+    </ion-buttons>
+    <ion-title>PERSONAJES</ion-title>
+    <ion-buttons slot="end">
+      <div class="logo-home-btn" (click)="goHome()">
+        <img src="assets/images/monster-logo.png" alt="Monster" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="chars-content">
+
+  <div class="chars-header">
+    <p class="chars-subtitle">Los rostros que dan vida a la oscuridad</p>
+    <div class="divider-blood"></div>
+  </div>
+
+  <div class="chars-grid">
+    <div class="char-card" *ngFor="let char of characters" (click)="goToDetail(char.id)">
+      <div class="char-image-wrap">
+        <img [src]="char.image" [alt]="char.name" class="char-img" />
+        <div class="char-img-overlay"></div>
+        <div class="char-role">{{ char.role }}</div>
+      </div>
+      <div class="char-info">
+        <h2 class="char-name">{{ char.name }}</h2>
+        <p class="char-desc">{{ char.shortDesc }}</p>
+        <div class="char-footer">
+          <span class="char-tag" *ngFor="let tag of char.tags">{{ tag }}</span>
+          <span class="char-more">VER MÁS ›</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

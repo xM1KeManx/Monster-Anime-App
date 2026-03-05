@@ -1,0 +1,60 @@
+<!-- src/app/pages/moment-detail/moment-detail.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">‹</ion-button>
+    </ion-buttons>
+    <ion-title>MOMENTO</ion-title>
+    <ion-buttons slot="end">
+      <div class="logo-home-btn" (click)="goHome()">
+        <img src="assets/images/monster-logo.png" alt="Monster" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="moment-detail-content" *ngIf="moment">
+
+  <!-- FOTO -->
+  <div class="md-hero">
+    <img [src]="moment.image" [alt]="moment.title" class="md-hero-img" />
+    <div class="md-hero-overlay"></div>
+    <div class="md-hero-text">
+      <div class="md-episode">{{ moment.episode }}</div>
+      <h1 class="md-title">{{ moment.title }}</h1>
+    </div>
+  </div>
+
+  <!-- VIDEO EMBED (reproducción interna) -->
+  <div class="video-section">
+    <div class="video-label">
+      <span class="video-icon">▶</span>
+      <span>ESCENA RELACIONADA</span>
+    </div>
+
+    <div class="video-wrapper">
+      <iframe
+        [src]="safeVideoUrl"
+        frameborder="0"
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        class="video-iframe">
+      </iframe>
+    </div>
+
+  
+  </div>
+
+  <div class="divider-blood"></div>
+
+  <!-- DESCRIPCIÓN COMPLETA -->
+  <div class="md-body">
+    <h2 class="section-title">ANÁLISIS DEL MOMENTO</h2>
+    <p class="md-paragraph" *ngFor="let paragraph of getDescParagraphs()">
+      {{ paragraph }}
+    </p>
+  </div>
+
+  <div style="height: 40px;"></div>
+
+</ion-content>

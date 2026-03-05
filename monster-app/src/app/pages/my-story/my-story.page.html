@@ -1,0 +1,85 @@
+<!-- src/app/pages/my-story/my-story.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">‹</ion-button>
+    </ion-buttons>
+    <ion-title>MI HISTORIA CON MONSTER</ion-title>
+    <ion-buttons slot="end">
+      <div class="logo-home-btn" (click)="goHome()">
+        <img src="assets/images/monster-logo.png" alt="Monster" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="story-content">
+
+  <div class="story-intro">
+    <div class="story-quote-block">
+      <div class="story-quote-line"></div>
+      <p class="story-quote">
+        "Hay historias que no solo se ven. Se sienten. Monster fue una de ellas."
+      </p>
+      <div class="story-quote-line"></div>
+    </div>
+  </div>
+
+  <!-- VIDEO PERSONAL -->
+  <div class="story-video-section">
+    <div class="video-label">
+      <span class="video-icon">🎥</span>
+      <span>MI HISTORIA CON MONSTER</span>
+    </div>
+
+    <!--
+      INSTRUCCIONES:
+      Reemplaza el src del <video> con la ruta a tu video personal.
+      El video debe estar en: src/assets/videos/my-story.mp4
+      Si prefieres usar un video de YouTube, usa un iframe como en moment-detail.
+    -->
+    <div class="video-wrapper">
+      <video
+        class="story-video"
+        controls
+        playsinline
+        poster="assets/images/story-poster.jpg">
+        <source src="assets/videos/my-story.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+
+    
+  </div>
+
+  <div class="divider-blood"></div>
+
+  <!-- TEXTO ESCRITO -->
+  <div class="story-body">
+    <h2 class="section-title">POR QUÉ MONSTER ME MARCÓ</h2>
+
+    <p class="story-paragraph">
+      <!--
+        PERSONALIZAR: Reemplaza este texto con tu historia personal.
+        Cuenta cuándo lo viste por primera vez, qué escena te impactó más,
+        cómo cambió tu forma de ver el mundo o los medios que consumes.
+      -->
+      Monster llegó a mi vida en un momento en que buscaba algo diferente. Estaba cansado de las historias predecibles, de los héroes sin defectos y los villanos sin profundidad. Entonces alguien me recomendó una serie de anime ambientada en Alemania, de un médico japonés persiguiendo a un asesino en serie que él mismo había salvado.
+    </p>
+
+    <p class="story-paragraph">
+      Lo que encontré fue mucho más que un thriller. Monster es una obra que te obliga a preguntarte cosas incómodas: ¿qué harías tú en el lugar de Tenma? ¿Puede alguien nacer malo, o lo que nos rodea nos hace así? ¿Vale más la vida de una persona que otra?
+    </p>
+
+    <p class="story-paragraph">
+      Grimmer se convirtió en mi personaje favorito no porque sea el más poderoso ni el más inteligente, sino porque su lucha es la más humana: recuperar la capacidad de sentir en un mundo que le enseñó a no hacerlo. Cuando finalmente llora, yo también lloré.
+    </p>
+
+    <p class="story-paragraph">
+      Monster no es solo un anime. Es una pregunta que se queda contigo: <em class="text-red">"¿Qué convierte a alguien en un monstruo?"</em> Y la respuesta que da Urasawa, con toda su ambigüedad, es la más honesta que he encontrado en cualquier medio.
+    </p>
+  </div>
+
+  <div style="height: 40px;"></div>
+
+</ion-content>

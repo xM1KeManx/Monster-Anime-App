@@ -1,0 +1,40 @@
+<!-- src/app/pages/moments/moments.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">‹</ion-button>
+    </ion-buttons>
+    <ion-title>MOMENTOS</ion-title>
+    <ion-buttons slot="end">
+      <div class="logo-home-btn" (click)="goHome()">
+        <img src="assets/images/monster-logo.png" alt="Monster" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="moments-content">
+
+  <div class="moments-header">
+    <p class="moments-subtitle">Los instantes que no se olvidan</p>
+    <div class="divider-blood"></div>
+  </div>
+
+  <div class="moments-list">
+    <div class="moment-card" *ngFor="let moment of moments; let i = index"
+         (click)="goToDetail(moment.id)"
+         [style.animation-delay]="(i * 0.1) + 's'">
+      <div class="moment-number">{{ (i + 1).toString().padStart(2, '0') }}</div>
+      <div class="moment-thumb-wrap">
+        <img [src]="moment.image" [alt]="moment.title" class="moment-thumb" />
+        <div class="moment-play-icon">▶</div>
+      </div>
+      <div class="moment-info">
+        <h3 class="moment-title">{{ moment.title }}</h3>
+        <p class="moment-episode">{{ moment.episode }}</p>
+        <p class="moment-desc">{{ moment.shortDesc }}</p>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

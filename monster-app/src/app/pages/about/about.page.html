@@ -1,0 +1,146 @@
+<!-- src/app/pages/about/about.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">‹</ion-button>
+    </ion-buttons>
+    <ion-title>ACERCA DE MONSTER</ion-title>
+    <ion-buttons slot="end">
+      <div class="logo-home-btn" (click)="goHome()">
+        <img src="assets/images/monster-logo.png" alt="Monster" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="about-content">
+
+  <!-- PORTADA DE LA OBRA -->
+  <div class="about-cover">
+    <img src="assets/images/monster-cover.jpg" alt="Monster Cover" class="cover-img" />
+    <div class="cover-overlay"></div>
+    <div class="cover-text">
+      <h1 class="cover-title">MONSTER</h1>
+      <p class="cover-jp">モンスター</p>
+    </div>
+  </div>
+
+  <!-- DATOS GENERALES -->
+  <div class="about-stats-grid">
+    <div class="about-stat">
+      <div class="about-stat-value">74</div>
+      <div class="about-stat-label">CAPÍTULOS</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-value">18</div>
+      <div class="about-stat-label">VOLÚMENES</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-value">74</div>
+      <div class="about-stat-label">EPISODIOS</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-value">1</div>
+      <div class="about-stat-label">TEMPORADA</div>
+    </div>
+  </div>
+
+  <div class="divider-blood"></div>
+
+  <!-- FICHA TÉCNICA -->
+  <div class="about-section">
+    <h2 class="section-title">FICHA TÉCNICA</h2>
+
+    <div class="info-row">
+      <span class="info-label">CREADOR</span>
+      <span class="info-value">Naoki Urasawa</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">EDITORIAL</span>
+      <span class="info-value">Shogakukan (Big Comic Original)</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">SERIALIZACIÓN</span>
+      <span class="info-value">1994 – 2001</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">ANIME ESTUDIO</span>
+      <span class="info-value">Madhouse</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">ANIME DIRECTOR</span>
+      <span class="info-value">Masayuki Kojima</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">ANIME EMISIÓN</span>
+      <span class="info-value">2004 – 2005 (NHK)</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">GÉNERO</span>
+      <span class="info-value">Thriller psicológico, Crimen, Drama</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">AMBIENTACIÓN</span>
+      <span class="info-value">Alemania, Rep. Checa — Años 80-90</span>
+    </div>
+  </div>
+
+  <div class="divider-blood"></div>
+
+  <!-- SINOPSIS -->
+  <div class="about-section">
+    <h2 class="section-title">SINOPSIS</h2>
+    <p class="about-text">
+      El Dr. Kenzo Tenma es un brillante neurocirujano japonés que trabaja en Frankfurt, Alemania. Una noche, desafiando las órdenes de sus superiores, decide operar a un niño herido de bala llamado Johan Liebert en lugar de al alcalde de la ciudad. El alcalde muere, y la carrera de Tenma se derrumba.
+    </p>
+    <p class="about-text">
+      Nueve años después, Tenma descubre que Johan —el niño que salvó— se ha convertido en un asesino en serie sin remordimientos, un verdadero monstruo que deja un rastro de muerte y caos a su paso. Tenma, sintiéndose responsable, abandona su vida para perseguirlo y detenerlo, aunque eso signifique convertirse en el criminal que la policía cree que es.
+    </p>
+    <p class="about-text">
+      A medida que la búsqueda se intensifica, Monster explora preguntas profundas sobre el bien y el mal, la responsabilidad moral, el trauma infantil y qué significa ser humano.
+    </p>
+  </div>
+
+  <div class="divider-blood"></div>
+
+  <!-- SOBRE NAOKI URASAWA -->
+  <div class="about-section">
+    <h2 class="section-title">EL CREADOR</h2>
+    <div class="creator-block">
+      <div class="creator-text">
+        <p class="about-text">
+          <strong class="text-cream">Naoki Urasawa</strong> (nacido en 1960, Tokio) es considerado uno de los maestros del manga contemporáneo. Conocido por su capacidad para mezclar tramas detectivescas con profundidad psicológica, Urasawa ha creado obras como <em>20th Century Boys</em>, <em>Pluto</em> y <em>Billy Bat</em>.
+        </p>
+        <p class="about-text">
+          Monster es considerada su obra más oscura y compleja, y frecuentemente aparece en listas de los mejores mangas y animes de todos los tiempos por su narrativa adulta, sus personajes profundos y su exploración de los límites de la moralidad humana.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREMIOS -->
+  <div class="about-section">
+    <h2 class="section-title">RECONOCIMIENTOS</h2>
+    <div class="awards-list">
+      <div class="award-item">
+        <span class="award-icon">🏆</span>
+        <span class="award-text">Premio Shogakukan de Manga (1997)</span>
+      </div>
+      <div class="award-item">
+        <span class="award-icon">🏆</span>
+        <span class="award-text">Premio Osamu Tezuka Cultural — Gran Premio</span>
+      </div>
+      <div class="award-item">
+        <span class="award-icon">⭐</span>
+        <span class="award-text">Top 10 IGN — Mejores animes de todos los tiempos</span>
+      </div>
+      <div class="award-item">
+        <span class="award-icon">⭐</span>
+        <span class="award-text">Calificación 9.1/10 en MyAnimeList</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 40px;"></div>
+
+</ion-content>

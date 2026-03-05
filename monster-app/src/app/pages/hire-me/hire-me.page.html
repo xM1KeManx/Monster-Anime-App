@@ -1,0 +1,116 @@
+<!-- src/app/pages/hire-me/hire-me.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">‹</ion-button>
+    </ion-buttons>
+    <ion-title>CONTRÁTAME</ion-title>
+    <ion-buttons slot="end">
+      <div class="logo-home-btn" (click)="goHome()">
+        <img src="assets/images/monster-logo.png" alt="Monster" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="hire-content">
+
+  <!-- FOTO Y NOMBRE -->
+  <div class="hire-hero">
+    <div class="hire-photo-wrap">
+      <img src="assets/images/my-photo.jpg" alt="Mi foto" class="hire-photo" />
+      <div class="hire-photo-border"></div>
+    </div>
+    <h1 class="hire-name">Michael E. Sosa A.</h1>
+    <p class="hire-role">Desarrollador Mobile · Ionic · Angular</p>
+    <div class="hire-tags">
+      <span class="hire-tag">Ionic</span>
+      <span class="hire-tag">Angular</span>
+      <span class="hire-tag">TypeScript</span>
+      <span class="hire-tag">Android</span>
+    </div>
+  </div>
+
+  <div class="divider-blood"></div>
+
+  <!-- SOBRE MÍ -->
+  <div class="hire-section">
+    <h2 class="section-title">SOBRE MÍ</h2>
+    <p class="hire-text">
+      <!--
+        PERSONALIZAR: Escribe tu presentación profesional aquí.
+        Incluye tus habilidades, experiencia, y lo que te diferencia.
+      -->
+      Desarrollador apasionado por la tecnología móvil y las experiencias de usuario bien diseñadas. Especializado en Ionic + Angular para la creación de aplicaciones híbridas multiplataforma. Me encanta combinar código limpio con diseño visual impactante.
+    </p>
+    <p class="hire-text">
+      Si buscas a alguien que entiende tanto la parte técnica como la experiencia del usuario, hablemos. Puedo convertir tu idea en una app funcional, atractiva y lista para publicar en tiendas.
+    </p>
+  </div>
+
+  <div class="divider-blood"></div>
+
+  <!-- DATOS DE CONTACTO -->
+  <div class="hire-section">
+    <h2 class="section-title">CONTACTO</h2>
+
+    <div class="contact-list">
+
+      <a class="contact-item" href="mailto:sosaariasmichael@gmail.com">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-info">
+          <span class="contact-label">EMAIL</span>
+          <span class="contact-value">sosaariasmichael@gmail.com</span>
+        </div>
+        <span class="contact-arrow">›</span>
+      </a>
+
+      <a class="contact-item" href="tel:+18298483111">
+        <div class="contact-icon">📱</div>
+        <div class="contact-info">
+          <span class="contact-label">TELÉFONO / WHATSAPP</span>
+          <span class="contact-value">+1 (829)-848-3111</span>
+        </div>
+        <span class="contact-arrow">›</span>
+      </a>
+
+      <a class="contact-item" href="https://github.com/xM1KeManx" target="_blank">
+        <div class="contact-icon">💻</div>
+        <div class="contact-info">
+          <span class="contact-label">GITHUB</span>
+          <span class="contact-value">xM1KeManx</span>
+        </div>
+        <span class="contact-arrow">›</span>
+      </a>
+
+      <a class="contact-item" href="https://www.linkedin.com/in/michael-emmanuel-sosa-arias/" target="_blank">
+        <div class="contact-icon">🔗</div>
+        <div class="contact-info">
+          <span class="contact-label">LINKEDIN</span>
+          <span class="contact-value">Michael Emmanuel Sosa Arias</span>
+        </div>
+        <span class="contact-arrow">›</span>
+      </a>
+
+
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="hire-cta">
+    <div class="cta-line"></div>
+    <p class="cta-text">¿Listo/a para el siguiente proyecto?</p>
+    <a href="mailto:sosaariasmichael@gmail.com?subject=Propuesta de proyecto&body=Hola, vi tu app de Monster y me interesa contactarte." 
+   class="cta-button">
+      ESCRÍBEME
+    </a>
+    <div class="cta-line"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="hire-footer">
+    <p>App creada con Ionic + Angular</p>
+    <p>Inspirada en Monster — Naoki Urasawa</p>
+  </div>
+
+</ion-content>

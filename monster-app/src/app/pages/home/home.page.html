@@ -1,0 +1,122 @@
+<!-- src/app/pages/home/home.page.html -->
+<ion-content [fullscreen]="true" class="home-content">
+
+  <!-- SLIDER / HERO SECTION -->
+  <div class="hero-slider">
+    <div class="slide" [class.active]="currentSlide === 0">
+      <div class="slide-bg slide-1" style="background-image: url('assets/images/slide1.jpg');"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="eyebrow">NAOKI URASAWA PRESENTS</div>
+        <h1 class="hero-title">MONSTER</h1>
+        <p class="hero-sub">モンスター</p>
+        <div class="hero-desc">
+          Una historia de crimen, identidad y la naturaleza del mal.<br>
+          ¿Puede un monstruo volver a ser humano?
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" [class.active]="currentSlide === 1">
+      <div class="slide-bg slide-2" style="background-image: url('assets/images/slide2.jpg');"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="eyebrow">JOHAN LIEBERT</div>
+        <h1 class="hero-title-sm">EL MONSTRUO</h1>
+        <p class="hero-quote">"El fin del mundo es solo el comienzo."</p>
+      </div>
+    </div>
+
+    <div class="slide" [class.active]="currentSlide === 2">
+      <div class="slide-bg slide-3" style="background-image: url('assets/images/slide3.jpg');"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="eyebrow">DR. KENZO TENMA</div>
+        <h1 class="hero-title-sm">LA PERSECUCIÓN</h1>
+        <p class="hero-quote">"Todas las vidas tienen el mismo valor."</p>
+      </div>
+    </div>
+
+    <!-- Dots indicadores -->
+    <div class="slider-dots">
+      <span *ngFor="let i of [0,1,2]"
+            class="dot"
+            [class.active]="currentSlide === i"
+            (click)="goToSlide(i)">
+      </span>
+    </div>
+
+    <!-- Flechas -->
+    <button class="slider-arrow left" (click)="prevSlide()">&#10094;</button>
+    <button class="slider-arrow right" (click)="nextSlide()">&#10095;</button>
+  </div>
+
+  <!-- MENÚ PRINCIPAL -->
+  <div class="main-menu">
+    <div class="menu-title">
+      <div class="divider-line"></div>
+      <span>EXPLORAR</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-card" (click)="navigate('characters')">
+        <div class="menu-icon">👤</div>
+        <div class="menu-card-content">
+          <h3>PERSONAJES</h3>
+          <p>Johan, Grimmer, Martin y más</p>
+        </div>
+        <div class="menu-arrow">›</div>
+        <div class="card-accent"></div>
+      </div>
+
+      <div class="menu-card" (click)="navigate('moments')">
+        <div class="menu-icon">📸</div>
+        <div class="menu-card-content">
+          <h3>MOMENTOS</h3>
+          <p>Los instantes más memorables</p>
+        </div>
+        <div class="menu-arrow">›</div>
+        <div class="card-accent"></div>
+      </div>
+
+      <div class="menu-card" (click)="navigate('about')">
+        <div class="menu-icon">📖</div>
+        <div class="menu-card-content">
+          <h3>ACERCA DE</h3>
+          <p>La obra, temporadas y creador</p>
+        </div>
+        <div class="menu-arrow">›</div>
+        <div class="card-accent"></div>
+      </div>
+
+      <div class="menu-card" (click)="navigate('my-story')">
+        <div class="menu-icon">🎥</div>
+        <div class="menu-card-content">
+          <h3>EN MI VIDA</h3>
+          <p>Por qué Monster me marcó</p>
+        </div>
+        <div class="menu-arrow">›</div>
+        <div class="card-accent"></div>
+      </div>
+
+      <div class="menu-card hire-card" (click)="navigate('hire-me')">
+        <div class="menu-icon">💼</div>
+        <div class="menu-card-content">
+          <h3>CONTRÁTAME</h3>
+          <p>Contacto y proyectos</p>
+        </div>
+        <div class="menu-arrow">›</div>
+        <div class="card-accent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="home-footer">
+    <p class="footer-text">Monster © Naoki Urasawa / Shogakukan</p>
+    <p class="footer-sub">App Fan-made — No comercial</p>
+  </div>
+
+</ion-content>
+

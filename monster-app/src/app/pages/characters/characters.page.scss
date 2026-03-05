@@ -1,0 +1,138 @@
+/* src/app/pages/characters/characters.page.scss */
+
+.chars-content {
+  --background: var(--monster-black);
+}
+
+.chars-header {
+  padding: 20px 16px 0;
+  text-align: center;
+
+  .chars-subtitle {
+    font-family: var(--font-accent);
+    font-size: 0.85rem;
+    color: var(--monster-text-dim);
+    font-style: italic;
+    margin: 0 0 12px;
+  }
+}
+
+/* =============================================
+   GRID DE PERSONAJES
+   ============================================= */
+.chars-grid {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.char-card {
+  background: var(--monster-darker);
+  border: 1px solid var(--monster-gray);
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  animation: fadeInUp 0.4s ease forwards;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+
+  &:active {
+    transform: scale(0.98);
+    border-color: var(--monster-red);
+  }
+}
+
+/* Imagen */
+.char-image-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.char-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease;
+  filter: grayscale(20%) contrast(1.1);
+}
+
+.char-card:active .char-img {
+  transform: scale(1.03);
+}
+
+.char-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(17,11,11,0.9) 100%
+  );
+}
+
+.char-role {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--monster-red-bright);
+  background: rgba(0,0,0,0.5);
+  padding: 2px 8px;
+  border-left: 2px solid var(--monster-red-bright);
+}
+
+/* Info */
+.char-info {
+  padding: 16px;
+}
+
+.char-name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--monster-cream);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.char-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--monster-text);
+  margin: 0 0 12px;
+}
+
+.char-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.char-tag {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--monster-text-dim);
+  border: 1px solid var(--monster-gray-mid);
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.char-more {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: var(--monster-red-bright);
+  text-transform: uppercase;
+}

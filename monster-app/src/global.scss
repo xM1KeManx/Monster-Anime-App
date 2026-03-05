@@ -1,0 +1,262 @@
+/* =============================================
+   MONSTER ANIME APP - GLOBAL STYLES
+   Paleta inspirada en el anime Monster de Naoki Urasawa
+   Tonos oscuros, rojos, crema y negro
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;500;700&family=Special+Elite&display=swap');
+
+/* =============================================
+   CSS VARIABLES - PALETA MONSTER
+   ============================================= */
+:root {
+  --monster-black: #0a0a0a;
+  --monster-dark: #111111;
+  --monster-darker: #1a1517;
+  --monster-red: #8b1a1a;
+  --monster-red-bright: #c0392b;
+  --monster-red-glow: #e74c3c;
+  --monster-crimson: #6b0f0f;
+  --monster-cream: #e8d5b0;
+  --monster-cream-dark: #c9b896;
+  --monster-gold: #b8960c;
+  --monster-gold-light: #d4af37;
+  --monster-gray: #2a2a2a;
+  --monster-gray-mid: #3d3535;
+  --monster-gray-light: #5a5050;
+  --monster-white: #f0e8d8;
+  --monster-text: #d4c5a9;
+  --monster-text-dim: #8a7a6a;
+
+  /* Fonts */
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Crimson Text', serif;
+  --font-accent: 'Special Elite', cursive;
+
+  /* Ionic overrides */
+  --ion-background-color: var(--monster-black);
+  --ion-text-color: var(--monster-text);
+  --ion-toolbar-background: var(--monster-dark);
+  --ion-toolbar-color: var(--monster-cream);
+  --ion-item-background: transparent;
+  --ion-card-background: var(--monster-darker);
+}
+
+/* =============================================
+   RESET Y BASE
+   ============================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--monster-black);
+  color: var(--monster-text);
+  font-family: var(--font-body);
+}
+
+ion-content {
+  --background: var(--monster-black);
+}
+
+/* =============================================
+   TOOLBAR GLOBAL
+   ============================================= */
+ion-toolbar {
+  --background: rgba(10, 10, 10, 0.95);
+  --border-color: var(--monster-red);
+  --border-width: 0 0 2px 0;
+  border-bottom: 2px solid var(--monster-red);
+  backdrop-filter: blur(10px);
+}
+
+ion-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--monster-cream);
+}
+
+ion-back-button {
+  --color: var(--monster-red-bright);
+  --icon-font-size: 1.2rem;
+}
+
+/* =============================================
+   LOGO BUTTON EN TOOLBAR
+   ============================================= */
+.logo-home-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.logo-home-btn:hover {
+  opacity: 1;
+}
+
+.logo-home-btn img {
+  height: 32px;
+  width: auto;
+  filter: drop-shadow(0 0 4px var(--monster-red));
+}
+
+/* =============================================
+   CARDS GLOBALES
+   ============================================= */
+ion-card {
+  --background: var(--monster-darker);
+  border: 1px solid var(--monster-gray);
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(139, 26, 26, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(139, 26, 26, 0.4);
+}
+
+ion-card-title {
+  font-family: var(--font-display);
+  color: var(--monster-cream);
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+ion-card-subtitle {
+  font-family: var(--font-accent);
+  color: var(--monster-red-bright);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =============================================
+   BOTONES
+   ============================================= */
+ion-button {
+  --background: var(--monster-red);
+  --background-hover: var(--monster-red-bright);
+  --color: var(--monster-cream);
+  --border-radius: 0px;
+  font-family: var(--font-display);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* =============================================
+   SEPARADOR DECORATIVO
+   ============================================= */
+.divider-blood {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--monster-red), transparent);
+  margin: 16px 0;
+}
+
+/* =============================================
+   TEXTURA DE FONDO
+   ============================================= */
+.texture-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(255,255,255,0.1) 2px,
+      rgba(255,255,255,0.1) 4px
+    );
+}
+
+/* =============================================
+   SCROLL PERSONALIZADO
+   ============================================= */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--monster-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--monster-red);
+  border-radius: 2px;
+}
+
+/* =============================================
+   ANIMACIONES
+   ============================================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bloodDrip {
+  0% { transform: scaleY(0); transform-origin: top; }
+  100% { transform: scaleY(1); transform-origin: top; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(139,26,26,0.3); }
+  50% { box-shadow: 0 0 25px rgba(192,57,43,0.7); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* =============================================
+   UTILITIES
+   ============================================= */
+.text-red { color: var(--monster-red-bright); }
+.text-cream { color: var(--monster-cream); }
+.text-gold { color: var(--monster-gold-light); }
+.text-dim { color: var(--monster-text-dim); }
+
+.font-display { font-family: var(--font-display); }
+.font-accent { font-family: var(--font-accent); }
+
+.border-red {
+  border: 1px solid var(--monster-red);
+}
+
+.glow-red {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+ion-header {
+  padding-top: env(safe-area-inset-top);
+}
+
+ion-toolbar:first-of-type {
+  padding-top: env(safe-area-inset-top);
+}

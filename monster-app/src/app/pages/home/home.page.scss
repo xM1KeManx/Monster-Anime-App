@@ -1,0 +1,330 @@
+/* src/app/pages/home/home.page.scss */
+
+.home-content {
+  --background: var(--monster-black);
+}
+
+/* =============================================
+   HERO SLIDER
+   ============================================= */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 350px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+
+  &.active {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  transition: transform 6s ease;
+}
+
+.slide.active .slide-bg {
+  transform: scale(1);
+}
+
+/* Slide 1 — imagen genérica oscura con gradiente (placeholder hasta tener imagen real) */
+.slide-1 {
+  background: linear-gradient(135deg, #1a0505 0%, #0d0d0d 40%, #0a0505 100%);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide-2 {
+  background: linear-gradient(135deg, #0d0505 0%, #1a0808 50%, #050505 100%);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide-3 {
+  background: linear-gradient(135deg, #050510 0%, #0d0d1a 50%, #050505 100%);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.3) 0%,
+    rgba(0,0,0,0.1) 40%,
+    rgba(10,5,5,0.85) 100%
+  );
+  z-index: 1;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+  z-index: 2;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  color: var(--monster-red-bright);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 12vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 12px;
+  color: var(--monster-cream);
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 4px;
+  text-shadow:
+    0 0 30px rgba(139,26,26,0.8),
+    0 2px 4px rgba(0,0,0,0.9);
+}
+
+.hero-sub {
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  color: var(--monster-red-bright);
+  letter-spacing: 6px;
+  margin: 0 0 12px;
+  opacity: 0.8;
+}
+
+.hero-title-sm {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: var(--monster-cream);
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  text-shadow: 0 0 20px rgba(139,26,26,0.6);
+}
+
+.hero-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--monster-text);
+  line-height: 1.6;
+  max-width: 320px;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+.hero-quote {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--monster-cream-dark);
+  opacity: 0.9;
+  margin: 0;
+  padding: 0 16px;
+}
+
+/* Dots */
+.slider-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(232, 213, 176, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.active {
+    background: var(--monster-red-bright);
+    width: 24px;
+    border-radius: 4px;
+  }
+}
+
+/* Flechas */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(139,26,26,0.3);
+  border: 1px solid var(--monster-red);
+  color: var(--monster-cream);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba(139,26,26,0.7);
+  }
+
+  &.left { left: 12px; }
+  &.right { right: 12px; }
+}
+
+/* =============================================
+   MENÚ PRINCIPAL
+   ============================================= */
+.main-menu {
+  padding: 24px 16px 16px;
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  span {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    color: var(--monster-text-dim);
+    white-space: nowrap;
+  }
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--monster-gray-mid));
+
+  &:last-child {
+    background: linear-gradient(90deg, var(--monster-gray-mid), transparent);
+  }
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--monster-darker);
+  border: 1px solid var(--monster-gray);
+  border-left: 3px solid var(--monster-red);
+  padding: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  border-radius: 2px;
+
+  &:active {
+    transform: scale(0.98);
+    border-left-color: var(--monster-red-bright);
+  }
+
+  &.hire-card {
+    border-left-color: var(--monster-gold);
+    margin-top: 6px;
+  }
+}
+
+.menu-icon {
+  font-size: 1.4rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(139,26,26,0.15);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.menu-card-content {
+  flex: 1;
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--monster-cream);
+    margin: 0 0 4px;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--monster-text-dim);
+    margin: 0;
+  }
+}
+
+.menu-arrow {
+  font-size: 1.5rem;
+  color: var(--monster-red);
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.card-accent {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(139,26,26,0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.home-footer {
+  padding: 16px 16px 32px;
+  text-align: center;
+
+  .footer-text {
+    font-family: var(--font-accent);
+    font-size: 0.7rem;
+    color: var(--monster-text-dim);
+    margin: 0 0 4px;
+  }
+
+  .footer-sub {
+    font-size: 0.65rem;
+    color: var(--monster-gray-light);
+    margin: 0;
+    font-family: var(--font-display);
+    letter-spacing: 1px;
+  }
+}
